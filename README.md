@@ -29,9 +29,9 @@ This package has been tested for only .asd files. It is not sure if this package
 
 **to convert each .asd file to csv file and save graph for each .asd file, type following**
 ```asdspec2csv.convert_individual(inputdir, outputdir, save_graph=Ture)```
-e.g. ```asdspec2csv.convert_individual ("gdrive:\\documents\\folder_containing_asdfiles", "gdrive:\\documents\\result_folder", save_graph=True)```
+e.g. ```asdspec2csv.convert_individual ("gdrive:\\documents\\FOLDER", "gdrive:\\documents\\result_folder", save_graph=True)```
 
-You need to provide the path of your input and output directory as shown in the example above
+You need to provide the path of your input (e.g. FOLDER) and output directory (e.g. result_folder) as shown in the example above
 
 you can choose to not save graph by setting ```save_graph=False``` 
 
