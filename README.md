@@ -4,15 +4,19 @@ This package basically converts spectral readings (*.asd) files to csv files. Us
 This package has been tested for only .asd files. It is not sure if this package will work for other file formats of spectral reading data.
 
 **How to use:**
+
 **step1** ```Goto your desired google drive directory and create a new google colaboratory file```
 
 **step2** Open the file and mount your google drive 
 
-**step3** Type the followin command in the first cell ```git clone ```
+**step3** Type the following command in the first cell ```git clone ```
 
-**step4** Change the working directory to the clone directory ```cd ```
+**step4** Change the working directory to the clone directory by typing ```cd "ASDspec2csv" ```
 
-**step5** ```import os``` ```import asdspec2csv```
+**step5** Type the following ```import os``` 
+```import asdspec2csv```
+
+**Start using the package**
 
 **Let's say we have 100 .asd files in folder named FOLDER**
 
