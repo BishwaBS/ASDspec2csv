@@ -1,4 +1,4 @@
-This package basically converts spectral readings (*.asd) files to csv files. User can also choose to create "Wavelength" vs "Reflectance" graph. The package provides functionality where user can perform the task for a number of files at a given time.
+This package basically converts spectral readings (*.asd) files to csv files. User can also choose to create "Wavelength" vs "Reflectance" graph. The package provides functionality where user can perform the task for a number of files at once.
 
 **Limitations:**
 This package has been tested for only .asd files. It is not sure if this package will work for other file formats of spectral reading data.
@@ -7,9 +7,13 @@ This package has been tested for only .asd files. It is not sure if this package
 
 **step1** ```Goto your desired google drive directory and create a new google colaboratory file```
 
-**step2** Open the file and mount your google drive 
+**step2** Open the collab file and mount your google drive by typing 
 
-**step3** Type the following command in the first cell ```git clone ```
+```from google.colab import drive```
+
+```drive.mount("/content/gdrive")```
+
+**step3** Type the following command after mounting the file ```git clone https://github.com/BishwaBS/ASDspec2csv.git ```
 
 **step4** Change the working directory to the clone directory by typing ```cd "ASDspec2csv" ```
 
@@ -22,7 +26,10 @@ This package has been tested for only .asd files. It is not sure if this package
 
 **to convert each .asd file to csv file and save graph for each .asd file, type following**
 ```asdspec2csv.convert_individual(inputdir, outputdir, save_graph=Ture)```
-e.g. ```asdspec2csv.convert_individual ("D:\\documents\\folder_containing_asdfiles", "D:\\documents\\result_folder", save_graph=True)```
+e.g. ```asdspec2csv.convert_individual ("gdrive:\\documents\\folder_containing_asdfiles", "gdrive:\\documents\\result_folder", save_graph=True)```
+
+You need to provide the path of your input and output directory as shown in the example above
+
 you can choose to not save graph by setting ```save_graph=False``` 
 
 **to average the reflectance values for all the .asd values in the folder and convert the averaged value to a csv file and save graph for averaged value**
