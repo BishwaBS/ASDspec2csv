@@ -17,7 +17,10 @@ This package has been tested for only .asd files. It is not sure if this package
 
 **step4** Change the working directory to the clone directory by typing ```cd "ASDspec2csv" ```
 
-**step5** Type the following ```import os``` 
+**step5** Type the following
+
+```import os``` 
+
 ```import asdspec2csv```
 
 **Start using the package**
