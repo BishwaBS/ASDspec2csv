@@ -1,8 +1,7 @@
 This package basically converts spectral readings (*.asd) files to csv files. User can also choose to create "Wavelength" vs "Reflectance" graph. The package provides functionality where user can perform the task for a number of files at a given time.
 
 **Limitations:**
-Only RGB (three bands) ortho mosaick is supported at this time
-This repo has not been tested over imagery that has black pixels outside of boundaries (These black pixels appear when the imagery are not in rectanglur shape)
+This package has been tested for only .asd files. It is not sure if this package will work for other file formats of spectral reading data.
 
 **How to use:**
 **step1** ```Goto your desired google drive directory and create a new google colaboratory file```
